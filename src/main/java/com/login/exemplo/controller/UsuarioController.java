@@ -24,7 +24,7 @@ public class UsuarioController {
     public ResponseEntity<?> saveUser(@Valid @RequestBody UsuarioRequestDTO user) {
         Usuario usuario = new Usuario(user.getName(), user.getEmail(), user.getPassword());
         usuarioRepository.save(usuario);
-        return ResponseEntity.ok("Deu certo pohaaaaaaaaaaaaaaaa");
+        return ResponseEntity.ok("Tudo certo");
     }
 
     @PostMapping("login")
